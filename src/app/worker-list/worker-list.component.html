@@ -1,0 +1,31 @@
+<div class="container p-5">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card">
+                <div class="card-body">
+                    <table class="table">
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Competence</th>
+                            <th>Wage</th>
+                            <th>Status</th>
+                        </tr>
+                        <tbody>    
+                            <tr *ngFor="let w of workers">
+                                <td>{{w.id}}</td>
+                                <td>{{w.name}}</td>
+                                <td>{{w.competence}}</td>
+                                <td>{{w.wage}}</td>
+                                <td>{{w.status}}</td>
+                                <td>
+                                    <button type="button" class="btn btn-danger" (click)="deleteWorker(w.id)">Delete</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

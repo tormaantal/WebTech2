@@ -1,0 +1,4 @@
+INSERT INTO `worker`(`id`, `name`, `competence`, `wage`, `status`) VALUES
+(1, 'Kiss András', 'CNC gépkezelő', 2500, 'szabad'),
+(2, 'Nagy Béla', 'CNC maró', 3000, 'dolgozik'),
+(3, 'Közepes Lajos', 'mérő', 1500, 'szabadságon');
