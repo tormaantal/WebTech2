@@ -18,10 +18,6 @@ export class WorkerListComponent {
     this.workers = await this.workerService.getAll();
   }  
 
-  navigatoToWorkerForm() {
-    this.router.navigate(['/worker-form'])
-  };
-
   async deleteWorker(id: number){
     await this.workerService.delete(id);
     this.workers = await this.workerService.getAll();
